@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import picture from "../../assets/golamsarwar.jpg";
+import picture from "../../assets/pfp.png";
 const Intro = () => {
   const [text] = useTypewriter({
     words: [
@@ -15,29 +15,29 @@ const Intro = () => {
     deleteSpeed: 80,
   });
   return (
-    <div className="flex justify-between pl-5 pr-7 items-center gap-5">
-      <div className="px-16 py-40 flex-1 border-2">
-        <h1 className="text-4xl font-bold ">
+    <div className="flex justify-between pl-5 pr-3 items-center gap-5 flex-col md:flex-row mt-5 md:mt-0">
+      <div className="lg:px-16 lg:py-40 flex-1">
+        <h1 className="lg:text-[40px] text-xl font-bold ">
           Hello, I am{" "}
-          <span className="bg-secondaryColor px-2 py-1 text-primaryColor">
+          <span className="bg-secondaryColor px-4 py-1 text-primaryColor">
             MD. Golam Sarwar
           </span>
         </h1>
-        <p className="mt-4 font-medium text-lg ">
-          <span className="bg-secondaryColor px-2 py-1 text-primaryColor">
+        <p className="mt-2 font-medium lg:text-xl md:text-base ">
+          <span className=" text-primaryColor">
             Your Vision, My Code. A Perfect Web Symphony.
           </span>
         </p>
-        <h1 className="text-4xl mt-4 font-bold">
+        <h1 className="lg:text-4xl text-xl mt-4 font-bold">
           I am a{" "}
-          <span className="bg-secondaryColor px-2 py-1 text-primaryColor">
+          <span className="bg-secondaryColor px-4 py-1 text-primaryColor">
             {text}
           </span>
           <span>
             <Cursor></Cursor>
           </span>
         </h1>
-        <div className="flex items-center gap-2 mt-8 text-primaryColor">
+        <div className="flex items-center gap-2 mt-10 text-primaryColor">
           <Link to="https://github.com/golamsarwar96">
             <FaGithub className="text-3xl"></FaGithub>
           </Link>
@@ -48,7 +48,7 @@ const Intro = () => {
             <FaFacebook className="text-3xl"></FaFacebook>
           </Link>
         </div>
-        <div className="mt-6">
+        <div className="mt-8">
           <a
             href="https://drive.google.com/file/d/1u-92YHgu3_v9IUgkEgZ7Jsqi78-YmRhu/view?usp=sharing"
             target="_blank"
@@ -58,8 +58,8 @@ const Intro = () => {
           </a>
         </div>
       </div>
-      <div className="flex-1 border-2">
-        <img src={picture} className="w-[600px]" alt="" />
+      <div className="flex-1">
+        <img src={picture} className="w-[550px]" alt="" />
       </div>
     </div>
   );
