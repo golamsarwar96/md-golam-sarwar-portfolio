@@ -1,5 +1,11 @@
+import Intro from "./Intro";
+
 const Home = () => {
-  return <div className="text-4xl">Home</div>;
+  return (
+    <div className="">
+      <Intro></Intro>
+    </div>
+  );
 };
 
 export default Home;
